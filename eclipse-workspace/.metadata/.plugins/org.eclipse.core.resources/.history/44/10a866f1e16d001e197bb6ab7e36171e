@@ -1,0 +1,16 @@
+package com.mzos.configuration;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.mzos.service.EmployeeService;
+
+public class EmployeeExecutor {
+
+	public static void main(String[] args) {
+		ApplicationContext context= new AnnotationConfigApplicationContext("EmployeeConfig.class");
+			EmployeeService service= (EmployeeService) context.getBean("EmployeeService.class");
+
+	}
+
+}

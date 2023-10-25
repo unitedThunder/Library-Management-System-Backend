@@ -1,0 +1,12 @@
+package com.mzos.dao;
+
+import java.sql.Connection;
+
+public class EmployeeRepo {
+
+	Connection con;
+	
+	public EmployeeRepo() {
+		
+	}
+}

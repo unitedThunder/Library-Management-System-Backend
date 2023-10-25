@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+/**
+ * @author Admin
+ *
+ */
+module SpringCoreApp {
+	requires java.sql;
+}

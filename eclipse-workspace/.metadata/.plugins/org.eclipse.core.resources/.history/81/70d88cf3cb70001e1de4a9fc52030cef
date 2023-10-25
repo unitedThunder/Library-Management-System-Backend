@@ -1,0 +1,5 @@
+package com.mzos.config;
+
+public class EmployeeConfig {
+
+}

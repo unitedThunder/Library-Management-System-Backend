@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="emp" class="com.mzos.Employee">  
+		<constructor-arg type="int" value="101"></constructor-arg>
+		<constructor-arg type="String" value="Hemant"></constructor-arg>
+		<constructor-arg type="float" value="20000"></constructor-arg>
+	</bean>
+	
+	<bean id="emp1" class="com.mzos.Employee">  
+		<property name="empId" value="102"></property>
+		<property name="empName" value="Akshay"></property>
+		<property name="empSal" value="200000"></property>
+		<property name="address">
+		<list>
+		<ref bean="addPermanent"/>
+		<ref bean="addTemp"/>
+		<ref bean="addSeasonal"/>
+		</list>
+		</property>
+		<property name="skill">
+		<list>
+		<value>Java</value>
+		<value>Spring</value>
+		<value>Angular</value>
+		<value>Mysql</value>
+		</list>
+		</property>
+		<property name="certification">
+		<set>
+		<value>Azure Developer</value>
+		<value>AWS Architect Associate</value>
+		<value>AWS DEveloper Associate</value>
+		</set>
+		</property>
+	</bean>
+	
+	<bean id="addPermanent" class="com.mzos.Address">
+		<property name="City" value="Nashik"></property>
+		<property name="State" value="Maharashtra"></property>
+		<property name="Zip" value="422004"></property>
+	</bean>
+	
+	<bean id="addTemp" class="com.mzos.Address">
+		<property name="City" value="Hinjewadi"></property>
+		<property name="State" value="Maharashtra"></property>
+		<property name="Zip" value="421004"></property>
+	</bean>
+	
+	<bean id="addSeasonal" class="com.mzos.Address">
+		<property name="City" value="Dhankawadi"></property>
+		<property name="State" value="Maharashtra"></property>
+		<property name="Zip" value="421001"></property>
+	</bean>
+
+</beans>

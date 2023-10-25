@@ -1,0 +1,5 @@
+package com.mzos.dao;
+
+public class EmployeeRepo {
+
+}

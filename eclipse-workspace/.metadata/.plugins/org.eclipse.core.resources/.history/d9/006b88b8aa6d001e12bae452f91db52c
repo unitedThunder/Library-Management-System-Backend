@@ -1,0 +1,5 @@
+package com.mzos.bean;
+
+public class Employee {
+
+}
